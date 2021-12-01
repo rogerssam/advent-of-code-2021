@@ -8,4 +8,13 @@ for(i in 2:nrow(input)) {
         increasing <- increasing + 1
     }
 }
-sum(increasing)
+
+
+increasing <- 0
+for(i in 4:nrow(input)) {
+    s1 <- sum(input$V1[(i-1):(i-3)])
+    s2 <- sum(input$V1[i:(i-2)])
+    if(s2 > s1) {
+        increasing <- increasing + 1
+    }
+}
