@@ -1,8 +1,9 @@
 # 2021 Advent of Code
-# Problem 1
+# Day 1
 
 input <- scan("input1.txt")
 
+# Problem 1
 # First solution
 increasing <- 0
 for(i in 2:length(input)) {
@@ -14,6 +15,7 @@ for(i in 2:length(input)) {
 # Vectorised solution
 sum(c(input, NA) > c(NA, input), na.rm = T)
 
+# Problem 2
 # First solution
 increasing <- 0
 for(i in 4:length(input)) {
