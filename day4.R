@@ -22,11 +22,10 @@ for(i in calls) {
         }
     }
     if(any(rows) | any(columns)) {
-        print(sum(m, na.rm = T)*i)
         break
     }
 }
-
+sum(m, na.rm = T)*i
 
 # Part 2
 boards2 <- boards
